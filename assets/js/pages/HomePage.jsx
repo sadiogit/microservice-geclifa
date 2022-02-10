@@ -2,8 +2,8 @@ import React from  'react'
 
 const HomePage = (props) => {
     return (<div class="jumbotron">
-    <h1 className="display-3">Hello, world!</h1>
-    <p className="lead">This is a simple hero unit, a simple jumbotattention to featured content or information.</p>
+    <h1 className="display-3">GECLIEFA</h1>
+    <p className="lead">La meilleure solution pour vous permetre de gerer les factures de vos clients!.</p>
     <hr className="my-4"/>
     <p>It uses utility classNamees for typography and spacing to space content out within the larger container.</p>
     <p className="lead">
