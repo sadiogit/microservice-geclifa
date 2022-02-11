@@ -5,7 +5,10 @@
 {% block stylesheets %}
 
     <link href="https://bootswatch.com/5/minty/bootstrap.min.css" rel="stylesheet">
-
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    
      {{ encore_entry_link_tags('app')}}
 {% endblock %}
 
@@ -15,5 +18,7 @@
 {% endblock %}
 
 {% block javascripts %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
     {{ encore_entry_script_tags('app')}}
 {% endblock %}

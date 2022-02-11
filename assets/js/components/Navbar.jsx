@@ -20,7 +20,7 @@ const Navbar = ({ history }) => {
             
         <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
         <div className="container-fluid">
-            <NavLink className="navbar-brand" to="/">Gestion Facture client</NavLink>
+            <NavLink className="navbar-brand" to="/">Microservice Geclifa</NavLink>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
             </button>
@@ -31,7 +31,7 @@ const Navbar = ({ history }) => {
                 <NavLink className="nav-link" to="/customers">Clients</NavLink>
                 </li>
                 <li className="nav-item">
-                <NavLink className="nav-link" to="/invoices">Facture</NavLink>
+                <NavLink className="nav-link" to="/invoices">Factures</NavLink>
                 </li>
             </ul>
             <ul className="navbar-nav ml-auto">
@@ -52,7 +52,7 @@ const Navbar = ({ history }) => {
 
                  <li className="nav-item">
                     <button onClick={handleLogout} className="btn btn-danger">
-                        Déconnexio
+                        Déconnexion
                     </button>
                 </li>
                )}
