@@ -12,7 +12,7 @@ const CustomerPage = ({match, history}) => {
     const { id = "new" } = match.params
 
     const [customer, setCustomer ] = useState({
-        lastName:"sadio",
+        lastName:"",
         firstName:"",
         email:"",
         company:""
@@ -95,8 +95,8 @@ const CustomerPage = ({match, history}) => {
             <form onSubmit={handleSubmit}>
                 <Field 
                     name="lastName"
-                    label="Nom du client"
-                    placeholder="Nom de la famille du client"
+                    label="Nom de famille du client"
+                    placeholder="nom"
                     value={customer.lastName}
                     onChange={handleChange}
                     error={errors.lastName}
@@ -104,15 +104,15 @@ const CustomerPage = ({match, history}) => {
                 <Field 
                     name="firstName"
                     label="Prénom du client"
-                    placeholder="prénom du client"
+                    placeholder="prénom"
                     value={customer.firstName}
                     onChange={handleChange}
                     error={errors.firstName}
                 />
                 <Field 
                     name="email"
-                    label="Email"
-                    placeholder="email du client"
+                    label="Email du client"
+                    placeholder="exemple@test.com"
                     value={customer.email}
                     onChange={handleChange}
                     error={errors.email}
@@ -120,8 +120,8 @@ const CustomerPage = ({match, history}) => {
                 />
                 <Field 
                     name="company"
-                    label="Etreprise"
-                    placeholder="compagnie du client"
+                    label="compagnie du client"
+                    placeholder="Etreprise"
                     value={customer.company}
                     onChange={handleChange}
                     error={errors.company}
